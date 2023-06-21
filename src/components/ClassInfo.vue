@@ -3,19 +3,20 @@
   <div >
     <h1>授業情報</h1>
     <h2>{{ classData.subject }}</h2>
-    <h2>教員： 飯尾淳</h2>
-    <h3>学期： 前期</h3>
+    <h2>教員：{{ classData.teacher }}</h2>
+    <h3>学期： {{ classData.semester }}</h3>
     <div>
       <h3>履修可能学年</h3>
-      <p>1年: 必修</p>
-      <p>2年: 可</p>
-      <p>3年: 不可</p>
-      <p>4年</p>
+      <p>1年: {{ classData.1st year }}</p>
+      <p>2年: {{ classData.2nd year }}</p>
+      <p>3年: {{ classData.3rd year }}</p>
+      <p>4年: {{ classData.4th year  }}</p>
     </div>
     <div>
       <h3>授業実施日時</h3>
-      <p>水曜 ４限</p>
+      <p>曜日: {{ classData.day }} 時限: {{ classData.period }}</p>
     </div>
+        <router-link to="/floor-select" class="back">フロア選択へ戻る</router-link>
   </div>
 </template>
 
