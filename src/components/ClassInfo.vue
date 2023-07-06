@@ -52,7 +52,6 @@ export default {
 .all {
   display: flex;
   flex-direction: column;
-  padding: 150px;
 }
 
 .class-info1 {
@@ -84,6 +83,7 @@ export default {
   line-height: normal;
   margin: 0;
   text-align: center;
+  padding: 5px;
 }
 
 .year {
