@@ -37,7 +37,7 @@
       <p v-else class="year"></p>
     </div>
 
-    <router-link to="/floor-select" class="back">戻る</router-link>
+    <router-link to="/floor-select" class="back">フロア選択へ戻る</router-link>
   </div>
 </template>
 
@@ -92,6 +92,7 @@ export default {
   font-family: Zen Kaku Gothic Antique;
   text-align: left;
 }
+
 .button-container {
   position: fixed;
   bottom: 200px;
